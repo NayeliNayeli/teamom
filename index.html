@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐼¿Vas a ser mi mejor amiga por todos los siglos?🐼</title>
+    <style>
+        .body {
+             background-color: whitesmoke;
+             text-align: center;
+        }
+
+        .body__title{
+             color: black;
+        }
+
+        .body__img {
+             width: 60%;
+             border-bottom: 10cm;
+        }
+        
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">🐼¿Vas a ser mi mejor amiga por todos los siglos?🐼</h1>
+    <img 
+         src="https://i.pinimg.com/736x/66/b3/b4/66b3b48abe7f389d968c70fafb0e9b75.jpg" 
+         alt="Foto Nuestra" class="body__img">
+    <button id="Yes">Chi</button>
+    <button id="No">Ño</button>
+
+    <script>
+          const vutonSi = document.getElementById('Yes');
+          const vutonNo = document.getElementById('No');
+
+      const bonita = () => {
+             alert('Uy no se puede 🙄');
+             alert('Song pa ti 💟');
+             location.href = 'https://www.youtube.com/watch?v=LPjZoJb-uFE';
+        };
+
+      const evitaqueserompamiCora =() =>{
+             vutonNo.style.position = 'absolute';
+             vutonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+             vutonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+        };
+
+          vutonSi.addEventListener('click', bonita);
+          vutonNo.addEventListener('mouseover', evitaqueserompamiCora);
+    </script>
+</body>
+
+</html>
